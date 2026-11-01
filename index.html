@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Strike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <div class="header-content">
+                <img class="chair" src="images/header-fg.png" alt="Stephen Strike sitting in a chair. Click to play Chair Runner." role="button" tabindex="0">
+                <div class="chair-runner-stage" hidden aria-hidden="true">
+                    <canvas id="chair-runner" class="chair-runner" tabindex="-1"></canvas>
+                    <button type="button" class="chair-runner-exit" aria-label="Exit game">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M5 5L19 19M19 5L5 19" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <nav class="header-nav" aria-label="Site links">
+                <a class="nav-logo" href="/" aria-label="Stephen Strike">
+                    <span class="nav-logo__name">Stephen Strike</span>
+                    <span class="nav-logo__descriptor" aria-hidden="true">
+                        <span class="nav-logo__word">Developer</span>
+                    </span>
+                </a>
+                <div class="nav-links">
+                    <a class="button" href="https://www.linkedin.com/in/stephenstrike" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a class="button" href="https://medium.com/@StephenStrike" target="_blank" rel="noopener noreferrer">Blog</a>
+                    <a class="button" href="https://docs.google.com/document/d/1d2uPt8nPx_BktH2i5g9TofzRgLEta8pzZnU9kz4oQtM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </nav>
+        </header>
+    </main>
+
+    <footer>
+        <p class="footer-text">Copyright &copy; 2026 Stephen Strike. All rights reserved.</p>
+    </footer>
+    <script src="scripts/chair-parallax.js" defer></script>
+    <script src="scripts/descriptor-rotate.js" defer></script>
+    <script src="scripts/chair-runner.js" defer></script>
+</body>
+
+</html>
