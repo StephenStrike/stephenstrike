@@ -11,9 +11,10 @@
   ];
 
   var wordElement = document.querySelector(".nav-logo__word");
+  var descriptor = document.querySelector(".nav-logo__descriptor");
   var chair = document.querySelector(".chair");
 
-  if (!wordElement || !chair) return;
+  if (!wordElement || !descriptor || !chair) return;
 
   var index = 0;
   var intervalMs = 2800;
@@ -42,6 +43,7 @@
       if (id !== transitionId) return;
 
       wordElement.textContent = word;
+      descriptor.classList.toggle("is-play-cue", word === "Play Game");
       wordElement.classList.remove("is-exiting");
       wordElement.classList.add("is-entering");
 

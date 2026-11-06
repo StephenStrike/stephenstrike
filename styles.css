@@ -209,6 +209,10 @@ body.game-active .header-nav {
   vertical-align: bottom;
 }
 
+.nav-logo__descriptor.is-play-cue {
+  color: var(--highlight-1);
+}
+
 .nav-logo__word {
   display: block;
   transition: opacity 400ms ease, transform 400ms ease;
